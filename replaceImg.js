@@ -14,7 +14,7 @@ const puppeteer = require("puppeteer");
     await page.waitFor("button.dCJp8.afkep.xqRnw");
     await page.$eval("button.dCJp8.afkep.xqRnw", (btn) => btn && btn.click());
     await page.$$eval("img.FFVAD", async (images) => {
-        var promises = [];
+        let promises = [];
 
         images.forEach((img) => {
             promises.push(
